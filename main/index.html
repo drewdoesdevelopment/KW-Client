@@ -384,7 +384,8 @@
           </div>
           
           <div class="col-lg-6 form">
-
+            <form action="https://api.mailslurp.com/forms" method="post">
+              <input type="hidden" name="_to" value="drewcpfeiler@gmail.com" />
             <h6>Get in touch</h6>
             <h2>Request Consultation</h2>
             <div class="row">
@@ -394,6 +395,7 @@
                   class="form-control"
                   placeholder="Your Name"
                   required=""
+                  name="name"
                 />
               </div>
               <div class="col-lg-6">
@@ -402,6 +404,7 @@
                   class="form-control"
                   placeholder="Your Email"
                   required=""
+                  name="email"
                 />
               </div>
               <div class="col-lg-12">
@@ -410,17 +413,18 @@
                   class="form-control"
                   placeholder="Phone Number"
                   required=""
+                  name="phone"
                 />
               </div>
               <div class="col-lg-12">
-                <form action="https://api.mailslurp.com/forms" method="post">
-                  <input type="hidden" name="_to" value="drewcpfeiler@gmail.com" />
+                
                 <textarea
                   class="form-control"
                   rows="4"
                   placeholder="Your Message"
+                  name="notes"
                 ></textarea>
-              
+
                 <button type="submit" class="btn btn-lg hvr-icon-bob" onclick="redirect();">Send Request <i class="fas fa-paper-plane hvr-icon" id="logo-padding"></i></button>
               </form>
               </div>

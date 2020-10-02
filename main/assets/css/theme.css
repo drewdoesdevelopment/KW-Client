@@ -46,6 +46,10 @@ h2 {
   font-size: 40px;
   margin-bottom: 30px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 a:hover {
   text-decoration: none;
 }
@@ -82,7 +86,7 @@ body {
   font-size: 16px;
 }
 .section {
-  padding: 100px 0px 120px;
+  padding: 50px 0px 120px;
 }
 /* -------------
 #Header
@@ -183,6 +187,10 @@ body {
   color: #516f9f;
 }
 
+#logo-padding {
+  padding-left: 10px;
+}
+
 /* -------------
 #Banner
 ------------- */
@@ -225,7 +233,7 @@ body {
 #About
 ------------- */
 .about {
-  padding: 0px 0px 120px;
+  padding: 50px 0px 120px;
 }
 .about .content {
   padding: 10px 0px 0px 50px;
@@ -632,6 +640,11 @@ body {
   color: #fff;
 }
 
+.kw-brand {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 50px;
+}
+
 /*----------------
 # Responsive
 --------------- */
@@ -646,7 +659,7 @@ body {
     margin-left: inherit !important;
   }
   .section {
-    padding: 80px 0px;
+    padding: 50px 0px;
   }
   .header-top p {
     float: left !important;
@@ -741,7 +754,7 @@ body {
     margin-left: inherit !important;
   }
   .section {
-    padding: 60px 0px;
+    padding: 50px 0px;
   }
   .header-top p {
     float: left !important;

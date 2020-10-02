@@ -373,6 +373,8 @@
     ============== -->
     <section class="section appointment">
       <div class="container">
+        <form target="_blank" action="https://api.mailslurp.com/forms" method="post">
+          <input type="hidden" name="_to" value="drewcpfeiler@gmail.com" />
         <div class="row">
           <div class="col-lg-6">
             <img
@@ -415,12 +417,13 @@
                   rows="4"
                   placeholder="Your Message"
                 ></textarea>
-                <button class="btn btn-lg">Send Request</button>
+                <button type="submit" class="btn btn-lg" onclick="redirect();">Send Request</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </form>
     </section>
     <!-- =============
       Appointment /
@@ -510,6 +513,12 @@
       Footer /
     ============== -->
     <!-- JS -->
+    <script type="text/javascript" language="javascript">
+      function redirect()
+      {
+          window.location.href="index.html";
+      }
+    </script>
     <script src="https://kit.fontawesome.com/781d094c6d.js" crossorigin="anonymous"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>

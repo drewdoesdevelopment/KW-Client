@@ -161,55 +161,65 @@
     ============== -->
     <section>
       <div class="container contact">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2><i class="far fa-paper-plane"></i> Contact Us</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="row">
-              <div class="col-lg-6">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Your Name"
-                />
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Your Email"
-                />
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="Your Phone"
-                />
-                <input type="text" class="form-control" placeholder="Subject" />
-              </div>
-              <div class="col-lg-6">
-                <textarea
-                  class="form-control"
-                  rows="5"
-                  placeholder="Your Message"
-                ></textarea>
-                <a href="#" class="btn btn-lg">Send Now</a>
-              </div>
+        <form
+          target="_blank"
+          action="https://api.mailslurp.com/forms"
+          method="post"
+        >
+          <input type="hidden" name="_to" value="drewcpfeiler@gmail.com" />
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2><i class="far fa-paper-plane"></i> Contact Us</h2>
             </div>
           </div>
-          <div class="col-lg-4 info">
-            <ul>
-              <li><i class="fas fa-phone"></i> 210-545-0180</li>
-              <li><i class="fas fa-envelope"></i> kennethwake@sbcglobal.net</li>
-              <li>
-                <i class="fas fa-map-marker-alt"></i> 14400 Northbrook Dr #130,
-                San Antonio, TX 78232
-              </li>
-            </ul>
+
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="row">
+                <div class="col-lg-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                  />
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                  />
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Your Phone"
+                  />
+              
+                </div>
+                <div class="col-lg-6">
+                  <textarea
+                    class="form-control"
+                    rows="5"
+                    placeholder="Your Message"
+                  ></textarea>
+                  <button type="submit" class="btn btn-lg" onclick="redirect();">Send Request</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 info">
+              <ul>
+                <li><i class="fas fa-phone"></i> 210-545-0180</li>
+                <li>
+                  <i class="fas fa-envelope"></i> kennethwake@sbcglobal.net
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i> 14400 Northbrook Dr
+                  #130, San Antonio, TX 78232
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+
       </div>
+    </form>
     </section>
     <!-- =============
       Contact /
@@ -301,6 +311,12 @@
       src="https://kit.fontawesome.com/781d094c6d.js"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" language="javascript">
+      function redirect()
+      {
+          window.location.href="index.html";
+      }
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>

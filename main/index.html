@@ -372,10 +372,8 @@
       Appointment
     ============== -->
     <section class="section appointment" id="nav-appointment">
-      <form action="https://api.mailslurp.com/forms" method="post"></form>
       <div class="container">
         
-          <input type="hidden" name="_to" value="drewcpfeiler@gmail.com" />
         <div class="row">
           <div class="col-lg-6">
             <img
@@ -385,6 +383,8 @@
             />
           </div>
           <div class="col-lg-6 form">
+            <form action="https://api.mailslurp.com/forms" method="post"></form>
+          <input type="hidden" name="_to" value="drewcpfeiler@gmail.com" />
             <h6>Get in touch</h6>
             <h2>Request Consultation</h2>
             <div class="row">
@@ -418,6 +418,7 @@
                   rows="4"
                   placeholder="Your Message"
                 ></textarea>
+              </form>
                 <button type="submit" class="btn btn-lg hvr-icon-bob" onclick="redirect();">Send Request <i class="fas fa-paper-plane hvr-icon" id="logo-padding"></i></button>
               </div>
             </div>
@@ -425,7 +426,7 @@
         </div>
 
       </div>
-    </form>
+
     </section>
     <!-- =============
       Appointment /

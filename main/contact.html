@@ -161,12 +161,6 @@
     ============== -->
     <section>
       <div class="container contact">
-        <form
-          target="_blank"
-          action="https://api.mailslurp.com/forms"
-          method="post"
-        >
-          <input type="hidden" name="_to" value="drewcpfeiler@gmail.com" />
           <div class="row">
             <div class="col-lg-12 text-center">
               <h2><i class="far fa-paper-plane"></i> Contact Us</h2>
@@ -175,22 +169,27 @@
 
           <div class="row">
             <div class="col-lg-8">
+              <form target="_blank" action="https://api.mailslurp.com/forms" method="post">
+                <input type="hidden" name="_to" value="drewcpfeiler@gmail.com" />
               <div class="row">
                 <div class="col-lg-6">
                   <input
                     type="text"
                     class="form-control"
                     placeholder="Your Name"
+                    name="Name"
                   />
                   <input
                     type="email"
                     class="form-control"
                     placeholder="Your Email"
+                    name="Email"
                   />
                   <input
                     type="tel"
                     class="form-control"
                     placeholder="Your Phone"
+                    name="Phone"
                   />
               
                 </div>
@@ -199,8 +198,10 @@
                     class="form-control"
                     rows="5"
                     placeholder="Your Message"
+                    name="Message"
                   ></textarea>
-                  <button type="submit" class="btn btn-lg" onclick="redirect();">Send Request</button>
+                  <button type="submit" class="btn btn-lg">Send Request</button>
+                  </form>
                 </div>
               </div>
             </div>
@@ -219,7 +220,6 @@
           </div>
 
       </div>
-    </form>
     </section>
     <!-- =============
       Contact /
